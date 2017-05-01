@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect
 import csv
 app = Flask(__name__)
 
+# sajt
+
 
 @app.route('/', methods=['GET', 'POST'])
 def show_list():
@@ -14,8 +16,7 @@ def show_list():
 
 @app.route('/story', methods=['POST'])
 def add_new_story():
-    return render_template('form.html', title='Add new Story', button='Create', story=['', '', '', '', '1000',
-                                                                                       '2.5', ''])
+    return render_template('form.html', title='Add new Story', button='Create', story=['', '', '', '', '1000', '2.5', ''])
 
 @app.route('/edit/<id>')
 def edit(id):
