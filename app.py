@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect
 import csv
 app = Flask(__name__)
 
-# sajt
-
+# sajt22
+# sajt333 
 
 @app.route('/', methods=['GET', 'POST'])
 def show_list():
